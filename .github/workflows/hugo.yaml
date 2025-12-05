@@ -50,20 +50,16 @@ jobs:
         uses: actions/configure-pages@v4  # 升级到v4
       - name: 安装Node.js依赖
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
-      - name: 使用Hugo构建
-        env:
-          # 为了与Hugo模块的最大向后兼容性
-          HUGO_ENVIRONMENT: production
-          HUGO_ENV: production
-        run: |
-          hugo \
-            --gc \
-            --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"          
-      - name: 上传构建产物
-        uses: actions/upload-pages-artifact@v3  # 升级到v3
-        with:
-          path: ./public
+- name: 使用Hugo构建
+  env:
+    HUGO_ENVIRONMENT: production
+    HUGO_ENV: production
+  run: |
+    hugo \
+      --gc \
+      --minify \
+      --baseURL "${{ steps.pages.outputs.base_url }}/"
+  working-directory: ./quickstart
 
   # 部署作业
   deploy:
