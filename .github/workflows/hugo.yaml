@@ -63,7 +63,7 @@ jobs:
       - name: 上传构建产物
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./quickstart/public
+          path: ./quickstart
 
   # 部署作业
   deploy:
