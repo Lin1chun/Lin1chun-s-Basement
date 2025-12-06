@@ -2,7 +2,7 @@
 date = '2025-12-06T19:47:04+08:00'
 draft = false
 title = '我的SQTP项目'
-cover = 'images\paccha!!-jet2holiday.webp'
+cover = 'images/paccha!!-jet2holiday.webp'
 tags = ["技术", "总结向"] 
 categories = ["控制天下"] 
 description = "简单总结了一下我的SQTP项目" 
