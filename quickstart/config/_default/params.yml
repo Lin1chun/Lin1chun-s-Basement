@@ -484,11 +484,11 @@ icp:
 
 # 萌国 ICP 备案
 moe_icp:
-  icpnumber: # 萌国ICP备案号
+  icpnumber: 20259878 # 萌国ICP备案号
 
 # Sponsor
 sponsor:
-  enable: false
+  enable: true
   tip: 
     zh-CN: 请作者喝杯咖啡吧
     zh-TW: 請作者喝杯咖啡吧
@@ -502,8 +502,8 @@ sponsor:
   qr:
     # - name: 支付宝
     #   src: "sponsor/alipay.jpg"
-    # - name: 微信
-    #   src: "sponsor/wechat.png"
+    - name: 微信
+      src: "sponsor/wechat.png"
 
 # Share
 share:
