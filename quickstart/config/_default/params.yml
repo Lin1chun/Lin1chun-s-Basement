@@ -95,7 +95,7 @@ copyright:
 
 footer:
   since: 2025 # 2020-current year
-  powered: true
+  powered: false
   count: true
   busuanzi: true
   icon:
@@ -551,7 +551,7 @@ service_worker:
 
 # Experimental
 live2d:
-  enable: true
+  enable: false
   position: left # left or right
 
 # Experimental
